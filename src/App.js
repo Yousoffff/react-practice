@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import Hheader from './Hheader';
+import Bbody from './Bbody';
+import Ffooter from './Ffooter';
 import './App.css';
+
+
+// const formatName=(user)=> {
+//   return user.firstName + ' ' + user.lastName;
+// }
+
+// const user = {
+//   firstName: 'Harper',
+//   lastName: 'Perez'
+// };
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+        <Hheader />
+        <Bbody />
+        <Ffooter />
+      </div>
   );
 }
 

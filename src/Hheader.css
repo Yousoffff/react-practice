@@ -1,0 +1,40 @@
+.hheader{
+    height: 150px;
+    background-color: rgb(89, 81, 143);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brand{
+    border: 1px solid green;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    
+
+}
+
+
+.menu{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.menu-list{
+    padding: 40px;
+
+}
+
+.menu a:link {
+    text-decoration: none;
+}
