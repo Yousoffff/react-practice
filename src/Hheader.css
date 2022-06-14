@@ -1,5 +1,5 @@
 .hheader{
-    height: 150px;
+    height: 100px;
     background-color: rgb(89, 81, 143);
     display: flex;
     flex-direction: row;
@@ -21,6 +21,8 @@
     border: 1px solid blue;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
     
 }
 
