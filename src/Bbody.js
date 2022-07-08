@@ -1,4 +1,4 @@
-import './Bbody.css'
+import './Bbody.css';
 
 
 
@@ -8,6 +8,7 @@ function Bbody(){
             <div className='gridContainer'>
                 <div className='gridC1'>1</div>
                 <div className='gridC2'>2</div>
+                <div className='gridC22'>22</div>
                 <div className='gridC3'>3</div>
                 <div className='gridC4'>4</div>
                 <div className='gridC5'>5</div>

@@ -1,3 +1,4 @@
+
 .hheader{
     height: 100px;
     background-color: rgb(89, 81, 143);
@@ -5,13 +6,84 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    font-size: 17px;
+    font-weight: 100;
 }
+
+@media screen and (max-width:1000px){
+    .hheader{
+        top: 0;
+        
+        width: 150px;
+        height: 0%;
+        padding-left: 50px;
+        position: fixed;
+        box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
+        right: -100px;
+        transition: all 0.3s;
+        -webkit-transition: all 0.5s;
+        z-index: 100;
+    }
+    .hheader:hover{
+        background-color:  rgb(89, 81, 143);
+        height: 65%;
+    }
+    .hheader:hover, .hheader:focus{
+        transform: translate3d(-100px, 0, 0);
+        animation-timing-function: 1s ease-in;
+    }
+    .hheader .brand{
+        position: absolute;
+        top: 15px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        /* transform: rotate(270deg); */
+        left: 1px;
+        font-weight: 800;
+        font-size: 20px;
+    }
+    .hheader .menu{
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-weight: 100;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
+    .hheader .menu li{
+        padding-bottom: 30px;
+        list-style-type: none;
+    }
+    .hheader .menu li a{
+        font-weight: bold;
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+    }
+    .hheader .menu li a:hover{
+        color: #fff;
+    }
+    .hheader .menu .menu-list li{
+        display: block;
+    }
+}
+
+
 
 .brand{
     border: 1px solid rgb(19, 209, 19);
     text-align: center;
-    font-size: 25px;
+    font-size: 24px;
     cursor: pointer;
+    font-weight: bold;
     
 
 }
@@ -20,9 +92,12 @@
 .menu{
     border: 1px solid blue;
     display: flex;
-    justify-content: center;
+    
+    justify-content: flex-end;
     align-items: center;
     height: 100%;
+    width: 70%;
+    
     
 }
 
@@ -34,6 +109,8 @@
 
 .menu-list{
     padding: 40px;
+    display: inline;
+    font-weight: bold;
 
 }
 
