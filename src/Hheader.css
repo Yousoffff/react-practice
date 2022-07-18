@@ -1,5 +1,6 @@
 
 .hheader{
+    z-index: 1;
     height: 100px;
     background-color: rgb(89, 81, 143);
     display: flex;
@@ -83,7 +84,6 @@
 
 
 .brand{
-    border: 1px solid rgb(19, 209, 19);
     text-align: center;
     font-size: 24px;
     cursor: pointer;
@@ -94,7 +94,6 @@
 
 
 .menu{
-    border: 1px solid blue;
     display: flex;
     
     justify-content: flex-end;

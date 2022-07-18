@@ -16,28 +16,6 @@ function GOT(){
 
 const showImage = (data) => {
 
-  // for(let i=0;i<100;i++){
-  //   const div = document.createElement("div");
-  //   const divContainer = document.querySelector(".episodeContainer");
-  //   div.id="divmmd";
-
-  //   const img = document.createElement("img");
-  //   img.id="imgmmd";
-  //   img.src = data[i].image.medium;
-    
-  //   const p = document.createElement("p");
-  //   p.id='pmmd';
-  //   p.textContent=data[i].name;
-
-
-  //   div.append(img,p);
-  //   divContainer.append(div);
-  // }
-
-
-
-
-
   for (const movie of data) {
     const div = document.createElement("div");
     const divContainer = document.querySelector(".episodeContainer");
